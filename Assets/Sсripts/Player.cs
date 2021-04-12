@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     {
 
         CheckGround();
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
             rb.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
 
         if (Input.GetAxis("Horizontal") == 0 && (isGrounded))
