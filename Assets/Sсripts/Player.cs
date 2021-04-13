@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D rb;                              //Вводим переменную текстуры
+    Rigidbody2D rb;                              
     public float speed;                          //Вводим переменную скорости
     public float jumpHeight;
     public Transform groundCheck; // Вводим для проверки земля-воздух
@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     bool isHit = false;   // Проверка на удар
     public Main main;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();        //Создаем отсылку на текстуру игрока
@@ -26,7 +25,7 @@ public class Player : MonoBehaviour
         currHp = maxHp;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
@@ -105,7 +104,21 @@ public class Player : MonoBehaviour
         main.GetComponent<Main>().Lose(); // Создаем метод Lose
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)  // Нужен, чтобы персонаж не прыгал на плафторме с тегом "Lift"
+    {
+        if (collision.gameObject.tag.Equals("Lift"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
 
 
+    private void OnCollisionExit2D(Collision2D collision)   // Нужен, чтобы персонаж не прыгал на плафторме с тегом "Lift"
+    {
+        if (collision.gameObject.tag.Equals("Lift"))
+        {
+            this.transform.parent = null;
+        }
+    }
 }
 
