@@ -456,11 +456,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 8
-=======
-  m_RootOrder: 11
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &10823536 stripped
 Transform:
@@ -494,17 +490,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.25, y: -0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< Updated upstream
   m_Children:
   - {fileID: 2092577891}
   - {fileID: 877954435}
   m_Father: {fileID: 0}
   m_RootOrder: 13
-=======
-  m_Children: []
-  m_Father: {fileID: 115644166}
-  m_RootOrder: 0
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72243184
 GameObject:
@@ -789,21 +779,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115644159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -6.51, y: -2.27, z: 0}
-=======
-  m_LocalPosition: {x: 18.79, y: 16.87, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 47905114}
   - {fileID: 72243185}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 2
-=======
-  m_RootOrder: 23
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &189789735 stripped
 Transform:
@@ -941,17 +923,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.25, y: -0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< Updated upstream
   m_Children:
   - {fileID: 1170600593}
   - {fileID: 1041210658}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-=======
-  m_Children: []
-  m_Father: {fileID: 550944551}
-  m_RootOrder: 0
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &223586455
 PrefabInstance:
@@ -6762,11 +6738,6 @@ Transform:
   - {fileID: 1925081666}
   - {fileID: 557270017}
   - {fileID: 625587366}
-<<<<<<< Updated upstream
-=======
-  - {fileID: 189789735}
-  - {fileID: 340151318}
->>>>>>> Stashed changes
   m_Father: {fileID: 349459451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
