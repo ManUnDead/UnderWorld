@@ -105,7 +105,25 @@ public class Player : MonoBehaviour
         main.GetComponent<Main>().Lose(); // Создаем метод Lose
     }
 
+<<<<<<< Updated upstream
 
 
+=======
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Lift"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Lift"))
+        {
+            this.transform.parent = null;
+        }
+    }
+>>>>>>> Stashed changes
 }
 
