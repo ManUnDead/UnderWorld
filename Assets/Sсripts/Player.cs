@@ -105,7 +105,20 @@ public class Player : MonoBehaviour
         main.GetComponent<Main>().Lose(); // Создаем метод Lose
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)        //ввели, чтобы игрок двигался вместе с платформой, а не подпрыгивал на ней при перемещении
+    {
+        if (collision.gameObject.tag.Equals ("Lift"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
 
-
+    private void OnCollisionExit2D(Collision2D collision)        //ввели, чтобы игрок двигался вместе с платформой, а не подпрыгивал на ней при перемещении
+    {
+        if (collision.gameObject.tag.Equals("Lift"))
+        {
+            this.transform.parent = null;
+        }
+    }
 }
 
