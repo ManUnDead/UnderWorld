@@ -111,6 +111,7 @@ public class Player : MonoBehaviour
         {
             this.transform.parent = collision.transform;
         }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)        //ввели, чтобы игрок двигался вместе с платформой, а не подпрыгивал на ней при перемещении
@@ -120,5 +121,7 @@ public class Player : MonoBehaviour
             this.transform.parent = null;
         }
     }
+
+    
 }
 
