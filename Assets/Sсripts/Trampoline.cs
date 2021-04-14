@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Batut : MonoBehaviour
+public class Trampoline : MonoBehaviour
 {
     public float bounce;
 
