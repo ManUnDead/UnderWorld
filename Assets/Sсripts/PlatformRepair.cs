@@ -20,7 +20,7 @@ public class PlatformRepair : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Invoke("PlatformDestroy", 3f);
+            Invoke("PlatformDestroy", 1f);
         }
     }
 
