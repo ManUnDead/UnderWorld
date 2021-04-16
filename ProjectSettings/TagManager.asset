@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lift
   - Batut
+  - Coin
   layers:
   - Default
   - TransparentFX

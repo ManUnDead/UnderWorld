@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {
@@ -9,6 +10,16 @@ public class Main : MonoBehaviour
     public GameObject LoseScreen;
     public GameObject WinScreen;
     public Player player;
+    public Text coinText;
+
+
+    public void Update()
+    {
+     coinText.text = player.GetCoins().ToString();
+    }
+
+
+
 
     public void ReloadLvl()
     {

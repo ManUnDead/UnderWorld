@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     bool isHit = false;   // Проверка на удар
     public Main main;
 
+    public int Coins = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -112,6 +114,8 @@ public class Player : MonoBehaviour
             this.transform.parent = collision.transform;
         }
 
+  
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)        //ввели, чтобы игрок двигался вместе с платформой, а не подпрыгивал на ней при перемещении
@@ -122,6 +126,18 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Coin")
+        {
+            Destroy(col.gameObject);
+            Coins++;
+        }
+    }
+
+    public int GetCoins()
+    {
+        return Coins;
+    }
 }
 
