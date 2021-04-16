@@ -82,7 +82,6 @@ public class Main : MonoBehaviour
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + player.GetCoins());
         else
             PlayerPrefs.SetInt("Coins", player.GetCoins());
-        print(PlayerPrefs.GetInt("Coins"));
     }
 
     public void WinOf()
