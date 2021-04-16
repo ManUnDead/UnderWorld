@@ -60,6 +60,8 @@ public class Main : MonoBehaviour
     public void NextLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        player.enabled = true;
+        Time.timeScale = 1f;
     }
 
 
