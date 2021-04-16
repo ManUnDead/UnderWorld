@@ -62,6 +62,8 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         player.enabled = true;
         Time.timeScale = 1f;
+
+     
     }
 
 
@@ -75,6 +77,12 @@ public class Main : MonoBehaviour
         if (!PlayerPrefs.HasKey("Lvl") || PlayerPrefs.GetInt("Lvl") < SceneManager.GetActiveScene().buildIndex)
             PlayerPrefs.SetInt("Lvl", SceneManager.GetActiveScene().buildIndex);
         print(PlayerPrefs.GetInt("Lvl"));
+
+        if (PlayerPrefs.HasKey("Coins"))
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + player.GetCoins());
+        else
+            PlayerPrefs.SetInt("Coins", player.GetCoins());
+        print(PlayerPrefs.GetInt("Coins"));
     }
 
     public void WinOf()

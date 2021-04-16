@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public Button[] lvls;
-    // Start is called before the first frame update
+    public Text coinText;
+
+
     void Start()
     {
         if (PlayerPrefs.HasKey("Lvl"))
@@ -21,11 +23,15 @@ public class Menu : MonoBehaviour
             }
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
-        
+        if (PlayerPrefs.HasKey("Coins"))
+            coinText.text = PlayerPrefs.GetInt("Coins").ToString();
+        else
+            coinText.text = "0";
     }
+
     public void OpenScene(int index)
     {
         SceneManager.LoadScene(index);
