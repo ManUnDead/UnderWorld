@@ -6,8 +6,8 @@ using UnityEngine;
 public class bullet : MonoBehaviour
     
 {
-    float speed = 5f;
-    float TimeToDisable = 11f;
+     float speed = 5f;
+    public float TimeToDisable;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +28,7 @@ public class bullet : MonoBehaviour
     {
         StopCoroutine(SetDisabled());
         gameObject.SetActive(false);
+
+        
     }
 }
