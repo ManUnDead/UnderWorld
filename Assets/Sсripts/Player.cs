@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     public int Coins = 0;
 
+    public Soundeffector soundeffector;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,12 @@ public class Player : MonoBehaviour
 
         CheckGround();
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        {
+
+
             rb.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
+            soundeffector.PlayJumpSound();
+        }
 
         if (Input.GetAxis("Horizontal") == 0 && (isGrounded))
         {
@@ -132,6 +139,7 @@ public class Player : MonoBehaviour
         {
             Destroy(col.gameObject);
             Coins++;
+            soundeffector.PlayCoinSound();
         }
     }
 

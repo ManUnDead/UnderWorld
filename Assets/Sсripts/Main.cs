@@ -11,7 +11,8 @@ public class Main : MonoBehaviour
     public GameObject WinScreen;
     public Player player;
     public Text coinText;
-
+    public GameObject music;
+    public Soundeffector soundeffector;
 
     public void Update()
     {
@@ -33,7 +34,6 @@ public class Main : MonoBehaviour
         Time.timeScale = 0f;
         player.enabled = false;
         PauseScreen.SetActive(true);
-
     }
 
     public void PauseOff()
@@ -41,7 +41,6 @@ public class Main : MonoBehaviour
         Time.timeScale = 1f;
         player.enabled = true;
         PauseScreen.SetActive(false);
-
     }
 
     public void Lose()
@@ -49,7 +48,8 @@ public class Main : MonoBehaviour
         Time.timeScale = 0f;
         player.enabled = false;
         LoseScreen.SetActive(true);
-
+        music.gameObject.SetActive(false);
+        soundeffector.PlayLoseSound();
     }
     public void MenuLvl()
     {
@@ -63,7 +63,7 @@ public class Main : MonoBehaviour
         player.enabled = true;
         Time.timeScale = 1f;
 
-     
+        
     }
 
 
@@ -73,6 +73,8 @@ public class Main : MonoBehaviour
         player.enabled = false;
         WinScreen.SetActive(true);
 
+        music.gameObject.SetActive(false);
+        soundeffector.PlayWinSound();
 
         if (!PlayerPrefs.HasKey("Lvl") || PlayerPrefs.GetInt("Lvl") < SceneManager.GetActiveScene().buildIndex)
             PlayerPrefs.SetInt("Lvl", SceneManager.GetActiveScene().buildIndex);
@@ -82,6 +84,7 @@ public class Main : MonoBehaviour
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + player.GetCoins());
         else
             PlayerPrefs.SetInt("Coins", player.GetCoins());
+        
     }
 
     public void WinOf()
