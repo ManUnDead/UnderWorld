@@ -9,7 +9,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
    
-    float speed = 3f;
+    float speed = 4f;
        public Transform target;
 
     // Start is called before the first frame update

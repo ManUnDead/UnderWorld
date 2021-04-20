@@ -21,6 +21,7 @@ public class Teleportation : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
+            Portal.SetActive(true);
         }
     }
 

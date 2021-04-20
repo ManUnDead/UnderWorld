@@ -141,6 +141,8 @@ public class Player : MonoBehaviour
             Coins++;
             soundeffector.PlayCoinSound();
         }
+
+        
     }
 
     public int GetCoins()
