@@ -37,7 +37,7 @@ public class HeroRemove : MonoBehaviour
             if (collision.gameObject.tag.Equals("Player"))
             {
 
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 25f, ForceMode2D.Impulse);
+            hero++;
 
         }
         }
@@ -47,6 +47,7 @@ public class HeroRemove : MonoBehaviour
         if (col.gameObject.tag.Equals ("PointToGo"))
         {
             hero = 2;
+            col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 25f, ForceMode2D.Impulse);
         }
     }
     
