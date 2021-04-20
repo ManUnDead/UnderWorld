@@ -11,11 +11,12 @@ public class Enemy : MonoBehaviour
         {
             collision.gameObject.GetComponent<Player>().RecountHp(-1);
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 7f, ForceMode2D.Impulse);
+                    
         }
+        
     }
     public IEnumerator Death()
     {
-        GetComponent<Animator>().SetBool("Dead", true);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         GetComponent<Collider2D>().enabled = false;
         GetComponentInChildren<Collider2D>().enabled = false;
