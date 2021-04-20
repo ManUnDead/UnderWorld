@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     int maxHp = 3;
     bool isHit = false;   // Проверка на удар
     public Main main;
+    Player player;
 
     public int Coins = 0;
 
@@ -119,9 +120,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag.Equals ("Lift"))
         {
             this.transform.parent = collision.transform;
-        }
-
-  
+        }  
 
     }
 
