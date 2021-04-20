@@ -49,6 +49,8 @@ public class HeroRemove : MonoBehaviour
             hero = 2;
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 25f, ForceMode2D.Impulse);
         }
+
+        
     }
     
 }
