@@ -9,7 +9,8 @@ public class Menu : MonoBehaviour
 {
     public Button[] lvls;
     public Text coinText;
-
+    public Slider musicSlider, soundSlider;
+    public Text musicText, soundText;
 
     void Start()
     {
@@ -21,11 +22,25 @@ public class Menu : MonoBehaviour
                 else
                     lvls[i].interactable = false;
             }
+        if (!PlayerPrefs.HasKey("MusicVolume"))
+            PlayerPrefs.SetInt("MusicVolume", 3);
+        if (!PlayerPrefs.HasKey("SoundVolume"))
+            PlayerPrefs.SetInt("SoundVolume", 2);
+
+        musicSlider.value = PlayerPrefs.GetInt("MusicVolume");
+        soundSlider.value = PlayerPrefs.GetInt("SoundVolume");
+
     }
 
  
     void Update()
     {
+        PlayerPrefs.SetInt("MusicVolume", (int)musicSlider.value);
+        PlayerPrefs.SetInt("SoundVolume", (int)soundSlider.value);
+
+        musicText.text = musicSlider.value.ToString();
+        soundText.text = soundSlider.value.ToString();
+
         if (PlayerPrefs.HasKey("Coins"))
             coinText.text = PlayerPrefs.GetInt("Coins").ToString();
         else

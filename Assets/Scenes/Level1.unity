@@ -5346,6 +5346,8 @@ MonoBehaviour:
   coinSound: {fileID: 8300000, guid: 7c11ba82147f641499bff0ef88d44801, type: 3}
   winSound: {fileID: 8300000, guid: c805015f7beea74418696599cb0b8c82, type: 3}
   loseSound: {fileID: 8300000, guid: 990f8298de54665469a1dd1b0d702d14, type: 3}
+  musicSource: {fileID: 712256059}
+  soundSource: {fileID: 905612335}
 --- !u!1 &521117398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6990,7 +6992,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5ec311b6052295b4fa6e422273946ea4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9724,7 +9726,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0

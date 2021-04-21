@@ -13036,6 +13036,8 @@ MonoBehaviour:
   coinSound: {fileID: 8300000, guid: 7c11ba82147f641499bff0ef88d44801, type: 3}
   winSound: {fileID: 8300000, guid: c805015f7beea74418696599cb0b8c82, type: 3}
   loseSound: {fileID: 8300000, guid: 990f8298de54665469a1dd1b0d702d14, type: 3}
+  musicSource: {fileID: 305588958}
+  soundSource: {fileID: 1594970844}
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
