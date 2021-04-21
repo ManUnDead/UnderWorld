@@ -25,10 +25,7 @@ public class HeroRemove : MonoBehaviour
             player.transform.position = hbm.transform.position;
         }
 
-        else
-        {
-            player.transform.position = player.transform.position;
-        }
+        
     }
 
 
@@ -44,11 +41,13 @@ public class HeroRemove : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D col)
     {
-        if (col.gameObject.tag.Equals ("PointToGo"))
+        if (col.gameObject.tag.Equals("PointToGo"))
         {
             hero = 2;
-            col.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 25f, ForceMode2D.Impulse);
+            player.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * 5000f);
         }
+
+        else hero = 0;
 
         
     }
