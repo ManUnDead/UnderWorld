@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
         {
             collision.gameObject.GetComponent<Player>().RecountHp(-1);
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 7f, ForceMode2D.Impulse);
-                    
         }
         
     }
