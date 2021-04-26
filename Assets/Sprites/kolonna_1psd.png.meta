@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7815dbfac0cc89043bf8a90e5c2de611
+guid: 480d5989b53715841a960e1f5a6172f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6710016273905722957
-    second: Fly1_0
+      213: 2572583849389508580
+    second: kolonna_1psd_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,38 +86,26 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly1_0
+      name: kolonna_1psd_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 389
-        width: 432
-        height: 176
+        x: 72
+        y: 75
+        width: 251
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 42, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d46ad3bff34ce1d50800000000000000
-      internalID: 6710016273905722957
+      spriteID: 4e7c4c18167a3b320800000000000000
+      internalID: 2572583849389508580
       vertices: []
       indices: 
       edges: []
