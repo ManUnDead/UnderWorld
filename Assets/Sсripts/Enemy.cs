@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    
+
     private void OnCollisionEnter2D(Collision2D collision) // Если скрипт не работает проверить правильность написания "OnCollisionEnter2D". При не правильном вводе визуал студио не обращает внимания
     {
         if (collision.gameObject.tag == "Player")
@@ -21,6 +24,7 @@ public class Enemy : MonoBehaviour
         GetComponentInChildren<Collider2D>().enabled = false;
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
+     
     }
     
     public void startDeath()

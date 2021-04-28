@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeToDisable: 12
+  left: right
 --- !u!114 &9157782248595311745
 MonoBehaviour:
   m_ObjectHideFlags: 0

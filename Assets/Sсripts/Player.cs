@@ -99,15 +99,15 @@ public class Player : MonoBehaviour
     IEnumerator OnHit()
     {
         if (isHit)
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g - 0.02f, GetComponent<SpriteRenderer>().color.b - 0.02f, GetComponent<SpriteRenderer>().color.a - 0.02f);
+            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g - 0.04f, GetComponent<SpriteRenderer>().color.b - 0.04f, GetComponent<SpriteRenderer>().color.a - 0.04f);
         else
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g + 0.02f, GetComponent<SpriteRenderer>().color.b + 0.02f, GetComponent<SpriteRenderer>().color.a + 0.02f);
+            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g + 0.04f, GetComponent<SpriteRenderer>().color.b + 0.04f, GetComponent<SpriteRenderer>().color.a + 0.04f);
         if (GetComponent<SpriteRenderer>().color.a == 1f)
             StopCoroutine(OnHit());
 
         if (GetComponent<SpriteRenderer>().color.a <= 0)
             isHit = false;
-        yield return new WaitForSeconds(0.02f);
+        yield return new WaitForSeconds(0.04f);
         StartCoroutine(OnHit());
     }
     void Lose()

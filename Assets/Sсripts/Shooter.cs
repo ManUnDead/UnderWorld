@@ -8,10 +8,11 @@ public class Shooter : MonoBehaviour
     public GameObject bullet;
     public Transform shoot;
     public float timeShoot;
+    public float line;
     // Start is called before the first frame update
     void Start()
     {
-        shoot.transform.position = new Vector3(transform.position.x-1 , transform.position.y, transform.position.z);
+        shoot.transform.position = new Vector3(transform.position.x+line , transform.position.y, transform.position.z);
         StartCoroutine(Shooting());
     }
 
