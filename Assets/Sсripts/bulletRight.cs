@@ -22,12 +22,11 @@ public class bulletRight : MonoBehaviour
     IEnumerator SetDisabled()
     {
         yield return new WaitForSeconds(TimeToDisable);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         StopCoroutine(SetDisabled());
-        gameObject.SetActive(false);
 
 
     }

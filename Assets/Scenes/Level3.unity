@@ -3297,7 +3297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &305588957
 Transform:
   m_ObjectHideFlags: 0
@@ -16741,6 +16741,7 @@ GameObject:
   - component: {fileID: 1465149114}
   - component: {fileID: 1465149111}
   - component: {fileID: 1465149116}
+  - component: {fileID: 1465149117}
   m_Layer: 0
   m_Name: zhaba
   m_TagString: Untagged
@@ -16823,7 +16824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465149110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.3, y: 71.2, z: 0}
+  m_LocalPosition: {x: 12.43, y: 71.24, z: 0}
   m_LocalScale: {x: -1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 599131741}
@@ -16847,6 +16848,7 @@ MonoBehaviour:
   speed: 0
   wallDetect: {fileID: 1167585503}
   maxHp: 10
+  isHit: 0
 --- !u!50 &1465149115
 Rigidbody2D:
   serializedVersion: 4
@@ -16880,6 +16882,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb92fbaa11db73478dfbf993826ef7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1465149117
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465149110}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d988a42df79db1a4b8f72df700d42362, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1465520292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5817123033694615000, guid: 7d223af83bf7676478e2aadf9aeffb1d,
@@ -18098,7 +18119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1594970842
 Transform:
   m_ObjectHideFlags: 0
@@ -21485,7 +21506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961990156}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.68, y: 75.73, z: 1.8201865}
+  m_LocalPosition: {x: -7.68, y: 75.84, z: 1.8201865}
   m_LocalScale: {x: 0.1, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1788567228}

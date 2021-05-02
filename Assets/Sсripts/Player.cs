@@ -82,6 +82,8 @@ public class Player : MonoBehaviour
     }
     public void RecountHp(int deltaHp)
     {
+        if (isHit) return;
+
         currHp = currHp + deltaHp;  // Прописываем изменение хп
         if (deltaHp < 0)
         {
@@ -104,7 +106,7 @@ public class Player : MonoBehaviour
             GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g + 0.04f, GetComponent<SpriteRenderer>().color.b + 0.04f, GetComponent<SpriteRenderer>().color.a + 0.04f);
         if (GetComponent<SpriteRenderer>().color.a == 1f)
             StopCoroutine(OnHit());
-
+   
         if (GetComponent<SpriteRenderer>().color.a <= 0)
             isHit = false;
         yield return new WaitForSeconds(0.04f);

@@ -22,7 +22,7 @@ public class FrogyDestroyed : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             gameObject.GetComponentInParent< FrogyDancer>().RecountHp(-1);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 8f, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 1f, ForceMode2D.Impulse);
         }
     }
 }

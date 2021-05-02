@@ -12,15 +12,19 @@ public class FrogyDancer : MonoBehaviour
 
     int currHp;
     public int maxHp = 10;
-    bool isHit = false;
+    [SerializeField] bool isHit = false;
+    Animator anim;
 
     void Start()
     {
-        StartCoroutine(Jump());
         currHp = maxHp;
+
+        anim = GetComponent<Animator>();
+
+        StartCoroutine(Jump());
     }
 
-    void Update()
+    void Update()   
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         RaycastHit2D groundInfo = Physics2D.Raycast(wallDetect.position, Vector2.left, 1f);  // 1 наименование в скобках - тот объект от которого идет луч, 2 наименование  - куда идет луч, 3 длина луча.
@@ -42,32 +46,29 @@ public class FrogyDancer : MonoBehaviour
 
     public void RecountHp(int deltaHp)
     {
-        currHp = currHp + deltaHp;  // Прописываем изменение хп
-        if (deltaHp < 0)
-        {
-            StopCoroutine(OnHit());
-            isHit = true;
-            StartCoroutine(OnHit());
-        }
-
         if (currHp <= 0)
         {
             gameObject.GetComponentInParent<Enemy>().startDeath();
         }
+
+
+        if (isHit) return;
+
+        currHp = currHp + deltaHp;  // Прописываем изменение хп
+        if (deltaHp < 0)
+        {
+            StartCoroutine(OnHit());
+        }
+
+        
     }
     IEnumerator OnHit()
     {
-        if (isHit)
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g - 0.04f, GetComponent<SpriteRenderer>().color.b - 0.04f, GetComponent<SpriteRenderer>().color.a - 0.04f);
-        else
-            GetComponent<SpriteRenderer>().color = new Color(1f, GetComponent<SpriteRenderer>().color.g + 0.04f, GetComponent<SpriteRenderer>().color.b + 0.04f, GetComponent<SpriteRenderer>().color.a + 0.04f);
-        if (GetComponent<SpriteRenderer>().color.a == 1f)
-            StopCoroutine(OnHit());
-
-        if (GetComponent<SpriteRenderer>().color.a <= 0)
-            isHit = false;
-        yield return new WaitForSeconds(0.04f);
-        StartCoroutine(OnHit());
+        isHit = true;
+        anim.SetBool("Hit", true);
+        yield return new WaitForSeconds(1f);
+        anim.SetBool("Hit", false);
+        isHit = false;
     }
 
         IEnumerator Jump()
@@ -78,4 +79,11 @@ public class FrogyDancer : MonoBehaviour
         StartCoroutine(Jump());
 
     }
+
+    private void ResetHit()
+    {
+      
+        anim.ResetTrigger("Hit");
+    }
+
 }
