@@ -16847,7 +16847,7 @@ MonoBehaviour:
   moveLeft: 1
   speed: 0
   wallDetect: {fileID: 1167585503}
-  maxHp: 10
+  maxHp: 5
   isHit: 0
 --- !u!50 &1465149115
 Rigidbody2D:
