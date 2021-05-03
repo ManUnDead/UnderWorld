@@ -27,7 +27,6 @@ public class bulletRight : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         StopCoroutine(SetDisabled());
-
-
+        Destroy(gameObject);
     }
 }
