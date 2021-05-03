@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: daa60f7b6d7a8ac4f9c0ee5668e09ff6
+guid: dfd0f6fd888aa6540b05f624b208f438
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4594430321440967287
-    second: Sleep enemy 3_0
+      213: -4162898995499630230
+    second: monetki_0
+  - first:
+      213: 8264920493769193036
+    second: monetki_1
+  - first:
+      213: -5284553447347118236
+    second: monetki_2
+  - first:
+      213: -51006505660398970
+    second: monetki_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,29 +95,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sleep enemy 3_0
+      name: monetki_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 115
-        width: 246
-        height: 90
+        x: 66
+        y: 317
+        width: 83
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +113,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9853a3907fd4d30c0800000000000000
-      internalID: -4594430321440967287
+      spriteID: a610a696b696a36c0800000000000000
+      internalID: -4162898995499630230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monetki_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 231
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4675ff4665e2b270800000000000000
+      internalID: 8264920493769193036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monetki_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 140
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f1f4e63ae79a6b0800000000000000
+      internalID: -5284553447347118236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monetki_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 56
+        width: 11
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682c0e47ad9ca4ff0800000000000000
+      internalID: -51006505660398970
       vertices: []
       indices: 
       edges: []

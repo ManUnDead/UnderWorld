@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: ff8cd430081d71141b3c61b9abd0fbdd
+guid: e188021f50fead742889670c96ee5614
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4973718196191310547
-    second: Sleep enemy 7_0
-  - first:
-      213: -3044268303433284365
-    second: Sleep enemy 7_1
-  - first:
-      213: -6096752754181581711
-    second: Sleep enemy 7_2
-  - first:
-      213: -8704714895106949626
-    second: Sleep enemy 7_3
+      213: -2581885080054620941
+    second: kamushek3_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,29 +86,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sleep enemy 7_0
+      name: kamushek3_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 190
-        width: 12
-        height: 17
+        x: 232
+        y: 303
+        width: 441
+        height: 549
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,71 +104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2dce1707adc9fab0800000000000000
-      internalID: -4973718196191310547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sleep enemy 7_1
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 115
-        width: 256
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f4c0e47b1690c5d0800000000000000
-      internalID: -3044268303433284365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sleep enemy 7_2
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 172
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1745f9b0cabf36ba0800000000000000
-      internalID: -6096752754181581711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sleep enemy 7_3
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 155
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60e39162ce3a23780800000000000000
-      internalID: -8704714895106949626
+      spriteID: 3fc9678f23d4b2cd0800000000000000
+      internalID: -2581885080054620941
       vertices: []
       indices: 
       edges: []

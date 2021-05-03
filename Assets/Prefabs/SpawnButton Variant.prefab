@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 2134742425296384681, guid: 7999c461a5f650740a2799322a7e2aa1,
         type: 3}
       propertyPath: m_Name
-      value: SpawnButton
+      value: SpawnButton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2134742425296384686, guid: 7999c461a5f650740a2799322a7e2aa1,
         type: 3}
@@ -113,7 +113,8 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.23477846
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2134742425296384687, guid: 7999c461a5f650740a2799322a7e2aa1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7999c461a5f650740a2799322a7e2aa1, type: 3}
 --- !u!1 &6258981074862313120 stripped
 GameObject:
