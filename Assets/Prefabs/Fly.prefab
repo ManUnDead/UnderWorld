@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4172917338088485906}
   - component: {fileID: 4172917338088485905}
   - component: {fileID: 4172917338088485904}
+  - component: {fileID: 5701677496940216235}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Untagged
@@ -98,8 +99,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.046467904, y: -0.018707223}
-  m_Size: {x: 1.5649767, y: 1.5284864}
+  m_Offset: {x: -1.0094426, y: -0.018707098}
+  m_Size: {x: 1.6140976, y: 1.528505}
   m_Direction: 1
 --- !u!114 &4172917338088485905
 MonoBehaviour:
@@ -129,6 +130,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb92fbaa11db73478dfbf993826ef7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5701677496940216235
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4172917338088485902}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1c4984ac89164f4da521179f61adf22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5254656989782752699
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5254656989782752699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.98, z: 0}
+  m_LocalPosition: {x: -1.04, y: 0.98, z: 0}
   m_LocalScale: {x: 1.2624999, y: 0.1325, z: 1}
   m_Children: []
   m_Father: {fileID: 4172917338088485907}
