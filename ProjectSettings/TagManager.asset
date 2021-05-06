@@ -8,6 +8,7 @@ TagManager:
   - Batut
   - Coin
   - PointToGo
+  - Portal
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 8194828463276987574
     second: personazh2_0
+  - first:
+      213: 5335610288980966456
+    second: personazh2_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +96,7 @@ TextureImporter:
       name: personazh2_0
       rect:
         serializedVersion: 2
-        x: 75
+        x: 127
         y: 130
         width: 131
         height: 347
@@ -104,8 +107,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b492ecb111e9b170800000000000000
-      internalID: 8194828463276987574
+      spriteID: 83c31aed945eb0a40800000000000000
+      internalID: 5335610288980966456
       vertices: []
       indices: 
       edges: []

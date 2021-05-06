@@ -9,18 +9,30 @@ public class Main : MonoBehaviour
     public GameObject PauseScreen;
     public GameObject LoseScreen;
     public GameObject WinScreen;
-    public Player player;
+
+    private Player player;
+    public Transform playerPos;
+    public GameObject[] players;
+
     public Text coinText;
     public GameObject music;
     public Soundeffector soundeffector;
+
+    private void Start()
+    {
+        
+    }
+
 
     public void Update()
     {
      coinText.text = player.GetCoins().ToString();
     }
 
-
-
+    private void Awake()
+    {
+        player = Instantiate(players[PlayerPrefs.GetInt("Player")], playerPos.position, Quaternion.identity).GetComponent<Player>();
+    }
 
     public void ReloadLvl()
     {
@@ -29,6 +41,7 @@ public class Main : MonoBehaviour
         player.enabled = true;
 
     }
+
     public void PauseOn()
     {
         Time.timeScale = 0f;
@@ -51,12 +64,14 @@ public class Main : MonoBehaviour
         music.gameObject.SetActive(false);
         soundeffector.PlayLoseSound();
     }
+
     public void MenuLvl()
     {
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
         player.enabled = true;
     }
+
     public void NextLvl()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
@@ -95,4 +110,4 @@ public class Main : MonoBehaviour
     }
 
   
-    }
+}

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime;
@@ -10,11 +10,12 @@ public class Camera : MonoBehaviour
 {
    
     float speed = 4f;
-       public Transform target;
+    private Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     transform.position = new Vector3(target.transform.position.x, target.transform.position.y , transform.position.z);
     }
 

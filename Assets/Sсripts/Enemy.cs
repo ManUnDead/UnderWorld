@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Player>().RecountHp(-1);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 9f, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 6f, ForceMode2D.Impulse);
         }
         
     }

@@ -61,5 +61,10 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+   
+    public void SetPlayer(int index)
+    {
+        PlayerPrefs.SetInt("Player", index);
+    }
 
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Teleportation : MonoBehaviour
 {
     public GameObject Portal;
-    public GameObject Player;
   
     void Start()
     {
@@ -20,7 +19,7 @@ public class Teleportation : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
+            other.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
             Portal.SetActive(true);
         }
     }

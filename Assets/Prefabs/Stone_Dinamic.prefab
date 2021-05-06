@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1928336148569344384, guid: fa41462a8ba0493499c925364e5a9330,
         type: 3}
       propertyPath: m_Name
-      value: Turbo (2)
+      value: Stone_Dinamic
       objectReference: {fileID: 0}
     - target: {fileID: 1928336148569344394, guid: fa41462a8ba0493499c925364e5a9330,
         type: 3}
@@ -71,6 +71,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620888551949025094, guid: fa41462a8ba0493499c925364e5a9330,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.023891449
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620888551949025094, guid: fa41462a8ba0493499c925364e5a9330,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5035782
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa41462a8ba0493499c925364e5a9330, type: 3}

@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();        //Создаем отсылку на текстуру игрока
         anim = GetComponent<Animator>();
+        main = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Main>();
+        soundeffector = main.gameObject.GetComponent<Soundeffector>();
         currHp = maxHp;
     }
 
