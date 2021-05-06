@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public Button[] lvls;
-    public Text coinText;
+    public Text coinText ,coinText1;
     public Slider musicSlider, soundSlider;
     public Text musicText, soundText;
 
@@ -29,7 +29,6 @@ public class Menu : MonoBehaviour
 
         musicSlider.value = PlayerPrefs.GetInt("MusicVolume");
         soundSlider.value = PlayerPrefs.GetInt("SoundVolume");
-
     }
 
  
@@ -42,9 +41,15 @@ public class Menu : MonoBehaviour
         soundText.text = soundSlider.value.ToString();
 
         if (PlayerPrefs.HasKey("Coins"))
+        {
             coinText.text = PlayerPrefs.GetInt("Coins").ToString();
+            coinText1.text = PlayerPrefs.GetInt("Coins").ToString();
+        }
         else
+        {
             coinText.text = "0";
+            coinText1.text = "0";
+        }
     }
 
     public void OpenScene(int index)
@@ -62,7 +67,7 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
    
-    public void SetPlayer(int index)
+    public void SetPlayer(int index)   // Для скинов
     {
         PlayerPrefs.SetInt("Player", index);
     }
