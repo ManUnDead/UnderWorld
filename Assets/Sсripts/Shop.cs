@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-    public GameObject BuyButton;
-    int BuySkin;
+    public GameObject BuyButton, BuyButtonCat;
+    int BuySkin, BuyCat;
     int coins;
     // Start is called before the first frame update
     void Start()
@@ -18,13 +18,20 @@ public class Shop : MonoBehaviour
         }
 
         BuySkin = PlayerPrefs.GetInt("BuySkin", 1);
+        BuyCat = PlayerPrefs.GetInt("BuyCat", 1);
         coins = PlayerPrefs.GetInt("Coins");
+
+
+        if (PlayerPrefs.HasKey("BuyCat"))
+        {
+            BuyCat = 2;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (BuySkin ==1)
+        if (BuySkin ==1)   // для покупки 
         {
             BuyButton.SetActive(true);
         }
@@ -32,6 +39,15 @@ public class Shop : MonoBehaviour
         else
         {
             BuyButton.SetActive(false);
+        }
+
+        if (BuyCat ==1)      // Для покупки лисы
+        {
+            BuyButtonCat.SetActive(true);
+        }
+        else
+        {
+            BuyButtonCat.SetActive(false);
         }
     }
      public void BuySkins()
@@ -43,6 +59,18 @@ public class Shop : MonoBehaviour
             BuySkin = 2;
             PlayerPrefs.GetInt("BuySkin", BuySkin);
             PlayerPrefs.SetInt("BuySkin", BuySkin);
+        }
+    }
+
+    public void BuyCaty()
+    {
+        if (coins >= 250)
+        {
+            coins -= 250;
+            PlayerPrefs.SetInt("Coins", coins);
+            BuyCat = 2;
+            PlayerPrefs.GetInt("BuyCat", BuyCat);
+            PlayerPrefs.SetInt("BuyCat", BuyCat);
         }
     }
 }
