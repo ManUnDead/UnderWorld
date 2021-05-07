@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4718733737803547792}
   - component: {fileID: 1330238892949943386}
   - component: {fileID: 798615969001639688}
+  - component: {fileID: 5716474645607585789}
   m_Layer: 0
   m_Name: PlayerCatty
   m_TagString: Player
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 6457451998797476281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.66, y: -2.16, z: 1}
-  m_LocalScale: {x: 0.6, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.55, y: 0.5, z: 1}
   m_Children:
   - {fileID: 2963716905940898481}
   m_Father: {fileID: 0}
@@ -172,3 +173,22 @@ MonoBehaviour:
   main: {fileID: 0}
   Coins: 0
   soundeffector: {fileID: 0}
+--- !u!95 &5716474645607585789
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457451998797476281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41891f5c0ef2d8f4d95983aa2f849e35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
