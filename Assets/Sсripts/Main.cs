@@ -20,7 +20,7 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-        Invoke("PauseOnDialogue",0f);
+    
     }
 
 
