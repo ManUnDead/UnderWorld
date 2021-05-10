@@ -20,7 +20,6 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
 
@@ -108,6 +107,7 @@ public class Main : MonoBehaviour
         player.enabled = true;
         WinScreen.SetActive(false);
     }
+
 
   
 }

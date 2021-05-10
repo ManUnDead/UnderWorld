@@ -12,8 +12,12 @@ public class Menu : MonoBehaviour
     public Slider musicSlider, soundSlider;
     public Text musicText, soundText;
 
+    
+
     void Start()
     {
+     
+
         if (PlayerPrefs.HasKey("Lvl"))
             for (int i = 0; i< lvls.Length; i++)
             {
@@ -72,4 +76,6 @@ public class Menu : MonoBehaviour
         PlayerPrefs.SetInt("Player", index);
     }
 
+
+    
 }
