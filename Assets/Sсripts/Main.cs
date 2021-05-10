@@ -20,6 +20,7 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
+        Invoke("PauseOnDialogue",0f);
     }
 
 
@@ -109,5 +110,14 @@ public class Main : MonoBehaviour
     }
 
 
-  
+
+    public void PauseOnDialogue()
+    {
+        player.enabled = false;
+    }
+
+    public void PauseOfDialogue()
+    {
+        player.enabled = true;
+    }
 }
