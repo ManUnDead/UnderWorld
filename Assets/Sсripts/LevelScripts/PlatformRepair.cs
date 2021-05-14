@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlatformRepair : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int Herotouch = 0;
+    public Animator animator;
+
     void Start()
     {
-
+        StartCoroutine(Cracked());
     }
 
     // Update is called once per frame
@@ -18,26 +20,29 @@ public class PlatformRepair : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Invoke("PlatformDestroy", 1f);
-        }
+        Herotouch = 1;
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Invoke("PlatformRepaire", 3f);
-        }
+        Herotouch = 0;
     }
 
-    void PlatformDestroy()
- {
-    gameObject.GetComponent<Collider2D>().enabled = false;
- }
-    void PlatformRepaire()
+    IEnumerator Cracked()
     {
-     gameObject.GetComponent<Collider2D>().enabled = true;
+        Debug.Log("IE-WORK");
+        if (Herotouch == 1)
+        {
+            gameObject.GetComponent<Collider2D>().enabled = false;
+            animator.SetBool("IsBroken",true);
+        }
+        else
+        {
+            gameObject.GetComponent<Collider2D>().enabled = true;
+            animator.SetBool("IsBroken", false);
+        }
+        yield return new WaitForSeconds(1.5f); ;
+        StopCoroutine(Cracked());
+        StartCoroutine(Cracked());
     }
 }
