@@ -7,25 +7,24 @@ using UnityEngine;
 
 public class HeroRemove : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public GameObject hbm;
     int hero = 0;
-
+    bool inPoint = false;
 
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
 
     void Update()
     {
-        if (hero > 0 & hero < 2)
+        if (hero == 1)
         {
             player.transform.position = hbm.transform.position;
         }
-
-        
+      
     }
 
 
@@ -34,22 +33,31 @@ public class HeroRemove : MonoBehaviour
             if (collision.gameObject.tag.Equals("Player"))
             {
 
-            hero++;
+            hero =1;
 
+            }
         }
-        }
+
+   
 
     private void OnTriggerEnter2D (Collider2D col)
     {
         if (col.gameObject.tag.Equals("PointToGo"))
         {
-            hero = 2;
+            inPoint= true;
             player.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * 5000f);
+            hero = 0;
         }
-
-        else hero = 0;
-
-        
     }
-    
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag.Equals("PointToGo"))
+        {
+            inPoint = false;
+        }
+    }
+
+
+
 }

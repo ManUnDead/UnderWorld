@@ -11170,8 +11170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.8, y: -10.1}
-  m_SizeDelta: {x: 188.48611, y: 57.703598}
+  m_AnchoredPosition: {x: -1.59, y: -14.05}
+  m_SizeDelta: {x: 227.40207, y: 55.151527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476164439
 MonoBehaviour:
@@ -11194,12 +11194,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 11
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -13481,8 +13481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.3, y: 27.4}
-  m_SizeDelta: {x: 63.62915, y: 19.765911}
+  m_AnchoredPosition: {x: 0.000020981, y: 27}
+  m_SizeDelta: {x: 131.33919, y: 19.765911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711254307
 MonoBehaviour:
@@ -13557,7 +13557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1773769946}
   dialogue:
-    name: "\u0417\u0430\u043F\u0438\u0441\u043A\u0430"
+    name: "\u0417\u0430\u043F\u0438\u0441\u043A\u0430 \u0441\u0442\u0430\u0440\u0446\u0430"
     sentences:
     - "\u201C...\u043D\u0435 \u043C\u043E\u0433\u0443 \u043F\u043E\u0434\u0432\u0435\u0440\u0433\u0430\u0442\u044C
       \u0435\u0433\u043E \u0442\u0430\u043A\u043E\u043C\u0443 \u0440\u0438\u0441\u043A\u0443,
@@ -13582,7 +13582,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2369251, y: 0.24345064}
+  m_Offset: {x: 1.3859558, y: 0.24345064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13593,7 +13593,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.21471, y: 1.4869013}
+  m_Size: {x: 4.916649, y: 1.4869013}
   m_EdgeRadius: 0
 --- !u!4 &1721139157
 Transform:
@@ -14264,7 +14264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 80165553}
   dialogue:
-    name: "\u0421\u0442\u0430\u0440\u0435\u0446"
+    name: "\u0417\u0430\u043F\u0438\u0441\u043A\u0438 \u0441\u0442\u0430\u0440\u0446\u0430"
     sentences:
     - "\u0422\u044B \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0448\u044C?
       \u0412\u0435\u0442\u0435\u0440 \u0442\u0443\u0442 \u0434\u0443\u0435\u0442
@@ -14272,13 +14272,13 @@ MonoBehaviour:
       \u043A\u0430\u043A \u0432 \u0442\u0435\u0445 \u043C\u0435\u0441\u0442\u0430\u0445
       \u0433\u0434\u0435 \u043C\u044B \u0431\u044B\u043B\u0438 \u0440\u0430\u043D\u044C\u0448\u0435."
     - "\u041C\u044B \u043C\u043D\u043E\u0433\u043E\u0435 \u0441 \u0442\u043E\u0431\u043E\u0439
-      \u043F\u0440\u043E\u0448\u043B\u0438. \u0412\u0441\u044E \u0436\u0438\u0437\u043D\u044C
-      \u043C\u044B \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u043B\u0438
+      \u043F\u0440\u043E\u0448\u043B\u0438. "
+    - "\u0412\u0441\u044E \u0436\u0438\u0437\u043D\u044C \u043C\u044B \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u043B\u0438
       \u0438 \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u044F \u043D\u0435 \u0431\u044B\u043B
       \u0442\u0430\u043A \u043E\u0431\u0435\u0441\u043F\u043E\u043A\u043E\u0435\u043D
-      \u043A\u0430\u043A \u0441\u0435\u0439\u0447\u0430\u0441. \u042F \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E
-      \u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C \u044D\u0442\u043E\u0433\u043E
-      \u043C\u0435\u0441\u0442\u0430"
+      \u043A\u0430\u043A \u0441\u0435\u0439\u0447\u0430\u0441."
+    - "\u042F \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E \u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C
+      \u044D\u0442\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u0430..."
 --- !u!1001 &1796717007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16427,7 +16427,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

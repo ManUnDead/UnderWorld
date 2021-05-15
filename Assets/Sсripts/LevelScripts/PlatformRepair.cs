@@ -30,7 +30,7 @@ public class PlatformRepair : MonoBehaviour
 
     IEnumerator Cracked()
     {
-        Debug.Log("IE-WORK");
+
         if (Herotouch == 1)
         {
             gameObject.GetComponent<Collider2D>().enabled = false;
