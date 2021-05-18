@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
 
-    public Queue<string> sentences;
+    public new Queue<string> sentences;
 
     void Start()
     {
@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         foreach ( char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f); ;
+            yield return new WaitForSeconds(0.02f); ;
         }
     }
 
