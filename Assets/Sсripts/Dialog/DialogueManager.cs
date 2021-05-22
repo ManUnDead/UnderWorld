@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
 
-    public new Queue<string> sentences;
+    public Queue<string> sentences;
 
     void Start()
     {
