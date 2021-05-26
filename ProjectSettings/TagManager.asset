@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Lift
+  - Batut
+  - Coin
+  - PointToGo
+  - Portal
+  - Joystick
+  - Jump
   layers:
   - Default
   - TransparentFX

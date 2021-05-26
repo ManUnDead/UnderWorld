@@ -8,9 +8,16 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public Button[] lvls;
-    // Start is called before the first frame update
+    public Text coinText ,coinText1;
+    public Slider musicSlider, soundSlider;
+    public Text musicText, soundText;
+
+    
+
     void Start()
     {
+     
+
         if (PlayerPrefs.HasKey("Lvl"))
             for (int i = 0; i< lvls.Length; i++)
             {
@@ -19,13 +26,36 @@ public class Menu : MonoBehaviour
                 else
                     lvls[i].interactable = false;
             }
+        if (!PlayerPrefs.HasKey("MusicVolume"))
+            PlayerPrefs.SetInt("MusicVolume", 3);
+        if (!PlayerPrefs.HasKey("SoundVolume"))
+            PlayerPrefs.SetInt("SoundVolume", 2);
+
+        musicSlider.value = PlayerPrefs.GetInt("MusicVolume");
+        soundSlider.value = PlayerPrefs.GetInt("SoundVolume");
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
-        
+        PlayerPrefs.SetInt("MusicVolume", (int)musicSlider.value);
+        PlayerPrefs.SetInt("SoundVolume", (int)soundSlider.value);
+
+        musicText.text = musicSlider.value.ToString();
+        soundText.text = soundSlider.value.ToString();
+
+        if (PlayerPrefs.HasKey("Coins"))
+        {
+            coinText.text = PlayerPrefs.GetInt("Coins").ToString();
+            coinText1.text = PlayerPrefs.GetInt("Coins").ToString();
+        }
+        else
+        {
+            coinText.text = "0";
+            coinText1.text = "0";
+        }
     }
+
     public void OpenScene(int index)
     {
         SceneManager.LoadScene(index);
@@ -40,5 +70,12 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+   
+    public void SetPlayer(int index)   // Для скинов
+    {
+        PlayerPrefs.SetInt("Player", index);
+    }
 
+
+    
 }

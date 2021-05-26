@@ -20,7 +20,7 @@ public class GroundPatrol : MonoBehaviour   // Наземный нпс-патр�
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(Vector2.left * speed * Time.deltaTime);
+       transform.Translate(Vector2.right * speed * Time.deltaTime);
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetect.position, Vector2.down , 1f );  // 1 наименование в скобках - тот объект от которого идет луч, 2 наименование  - куда идет луч, 3 длина луча.
        if (groundInfo.collider == false)
         {
