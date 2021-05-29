@@ -20,7 +20,6 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-    
     }
 
 
@@ -70,6 +69,11 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
         player.enabled = true;
+
+        if (PlayerPrefs.HasKey("Coins"))
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + player.GetCoins());
+        else
+            PlayerPrefs.SetInt("Coins", player.GetCoins());
     }
 
     public void NextLvl()
