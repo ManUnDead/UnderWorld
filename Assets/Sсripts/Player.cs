@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -153,7 +150,7 @@ public class Player : MonoBehaviour
         
     }
 
-    public void Jump()
+    public void OnMouseDown()
     {
         if (isGrounded)
         {

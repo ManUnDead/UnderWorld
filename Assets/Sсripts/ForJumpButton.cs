@@ -14,9 +14,9 @@ public class ForJumpButton : MonoBehaviour
     }
 
 
-    public void ForJump()
+    public void OnMouseDown()
     {
-        playerScript.Jump();
+        playerScript.OnMouseDown();
     }
 
     
